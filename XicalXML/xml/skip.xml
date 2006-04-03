@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!-- SKIP -->
+<xical title="$title$">
+	<chapter title="$title$">
+		<scene number="$num$">
+			<title></title>
+			<template>skip</template>
+			<audio></audio>
+			<h></h>
+			<text1></text1>
+			<note></note>
+			<target></target>
+		</scene>
+		<scene number="$num$">
+			<title></title>
+			<template>skip</template>
+			<audio></audio>
+			<h></h>
+			<text1></text1>
+			<note></note>
+			<target></target>
+		</scene>
+	</chapter>
+	<chapter title="$title$">
+		<scene number="$num$">
+			<title></title>
+			<template>skip</template>
+			<audio></audio>
+			<h></h>
+			<text1></text1>
+			<note></note>
+			<target></target>
+		</scene>
+		<scene number="$num$">
+			<title></title>
+			<template>skip</template>
+			<audio></audio>
+			<h></h>
+			<text1></text1>
+			<note></note>
+			<target></target>
+		</scene>
+	</chapter>
+</xical>

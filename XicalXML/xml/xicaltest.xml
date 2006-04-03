@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!-- SKIP -->
+<xical title="$title$">
+	<chapter title="$title$">
+	<scene number="30">
+		<title></title>
+		<template></template>
+		<elvo></elvo>
+		<overlay></overlay>
+		<audio></audio>
+		<h></h>
+		<text1></text1>
+		<text2></text2>
+		<bigtext></bigtext>
+		<note></note>
+		<target></target>
+		<position>
+			<elvo></elvo>
+			<audio></audio>
+			<text></text>
+			<reply></reply>
+			<comment></comment>
+			<memo></memo>
+			<note></note>
+			<type></type>
+		</position>
+	</scene>
+	</chapter>
+</xical>

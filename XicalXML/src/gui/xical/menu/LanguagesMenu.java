@@ -9,6 +9,13 @@
  */
 package gui.xical.menu;
 
+import gui.xical.XicalEditor;
+import gui.xical.XicalMenuBar;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
@@ -28,7 +35,42 @@ public class LanguagesMenu extends JMenu {
 		english = new JMenuItem(Language.getString("english"));
 		add(german);
 		add(english);
+		addActions();
+	}
+
+	private void addActions() {
+		german.addActionListener(new ActionListener() {
 		
+			public void actionPerformed(ActionEvent e) {
+				System.out.println(Language.getString("FileMenu"));
+				Language.initLanguage(new File("german.properties"));
+
+				System.out.println(Language.getString("FileMenu"));
+				XicalEditor.mainEditor.setVisible(false);
+				XicalMenuBar bar = new XicalMenuBar();
+				
+				XicalEditor.mainEditor.setBar(bar);
+				//XicalEditor.mainEditor.setJMenuBar(bar);
+				XicalEditor.mainEditor.setVisible(true);
+			}
+		
+		});
+		english.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				System.out.println(Language.getString("FileMenu"));
+				Language.initLanguage(new File("english.properties"));
+
+				System.out.println(Language.getString("FileMenu"));
+				XicalEditor.mainEditor.setVisible(false);
+				XicalMenuBar bar = new XicalMenuBar();
+				
+				XicalEditor.mainEditor.setBar(bar);
+				//XicalEditor.mainEditor.setJMenuBar(bar);
+				XicalEditor.mainEditor.setVisible(true);
+			}
+		
+		});
 	}
 }
 

@@ -155,6 +155,7 @@ public class XicalEditor extends JFrame {
 	 */
 	public void setBar(JMenuBar bar) {
 		this.bar = bar;
+		setJMenuBar(bar);
 	}
 }
 

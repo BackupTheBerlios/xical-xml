@@ -22,8 +22,9 @@ public class ViewMenu extends JMenu {
 private JMenu languages;
 public ViewMenu() {
 	setText(Language.getString("ViewMenu"));
-	languages = new LanguagesMenu();
-	add(languages);
+	//keine unterstüzung im betrieb
+	//languages = new LanguagesMenu();
+	//add(languages);
 }
 }
 

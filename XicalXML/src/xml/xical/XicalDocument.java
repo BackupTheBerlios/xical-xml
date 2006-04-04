@@ -17,6 +17,9 @@ import java.util.List;
  * 
  */
 public class XicalDocument {
+	
+	private boolean saved;
+	
 	private String title;
 
 	private List chapterList;
@@ -110,6 +113,20 @@ public class XicalDocument {
 	 */
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	/**
+	 * @return Returns the saved.
+	 */
+	public boolean isSaved() {
+		return saved;
+	}
+
+	/**
+	 * @param saved The saved to set.
+	 */
+	public void setSaved(boolean saved) {
+		this.saved = saved;
 	}
 
 	

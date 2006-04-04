@@ -28,6 +28,7 @@ public class LanguagesMenu extends JMenu {
 		english = new JMenuItem(Language.getString("english"));
 		add(german);
 		add(english);
+		
 	}
 }
 

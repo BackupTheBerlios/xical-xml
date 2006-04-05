@@ -20,7 +20,9 @@ import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JOptionPane;
 
-import lang.Language;
+import conf.Config;
+import conf.lang.Language;
+
 import xml.xical.XicalDocument;
 
 /**
@@ -58,6 +60,7 @@ public class XicalEditor extends JFrame {
 		}
 
 		public void windowClosed(WindowEvent e) {
+			beforeExit();
 			System.exit(0);
 		}
 
@@ -100,10 +103,14 @@ public class XicalEditor extends JFrame {
 				dispose();
 			else {
 				// Abbruch do nothing
+
 			}
 		}
 	}
-	
+
+	private void beforeExit(){
+		Config.storeConfig();
+	}
 	
 	private void createGUI() {
 		setTitle(title);
@@ -111,6 +118,7 @@ public class XicalEditor extends JFrame {
 		setLayout(layout);
 		// startFlag = true;
 		addWindowListener(new MainWindowListener());
+		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 		FrameHelper.centerWindow(this);
 		bar = new XicalMenuBar();
 	}
@@ -135,10 +143,10 @@ public class XicalEditor extends JFrame {
 		createGUI();
 		addBasics();
 	}
-	
+
 	private void addBasics() {
 		setJMenuBar(bar);
-	//	add(new ChapterTreeList(),BorderLayout.LINE_START);
+		// add(new ChapterTreeList(),BorderLayout.LINE_START);
 	}
 
 	/**

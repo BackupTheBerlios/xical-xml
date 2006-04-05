@@ -17,17 +17,18 @@ import java.util.List;
  * 
  */
 public class XicalDocument {
-	
+
 	private boolean saved;
-	
+
+	private String filePath;
+
 	private String title;
 
 	private List chapterList;
 
 	private XicalAuthor author;
-	
-	private String type,price,license;
-	
+
+	private String type, price, license;
 
 	/**
 	 * @return Returns the author.
@@ -67,7 +68,8 @@ public class XicalDocument {
 	}
 
 	/**
-	 * @param title The title to set.
+	 * @param title
+	 *            The title to set.
 	 */
 	public void setTitle(String title) {
 		this.title = title;
@@ -81,7 +83,8 @@ public class XicalDocument {
 	}
 
 	/**
-	 * @param license The license to set.
+	 * @param license
+	 *            The license to set.
 	 */
 	public void setLicense(String license) {
 		this.license = license;
@@ -95,7 +98,8 @@ public class XicalDocument {
 	}
 
 	/**
-	 * @param price The price to set.
+	 * @param price
+	 *            The price to set.
 	 */
 	public void setPrice(String price) {
 		this.price = price;
@@ -109,7 +113,8 @@ public class XicalDocument {
 	}
 
 	/**
-	 * @param type The type to set.
+	 * @param type
+	 *            The type to set.
 	 */
 	public void setType(String type) {
 		this.type = type;
@@ -123,18 +128,32 @@ public class XicalDocument {
 	}
 
 	/**
-	 * @param saved The saved to set.
+	 * @param saved
+	 *            The saved to set.
 	 */
 	public void setSaved(boolean saved) {
 		this.saved = saved;
 	}
 
-	
+	/**
+	 * @return Returns the filePath.
+	 */
+	public String getFilePath() {
+		return filePath;
+	}
+
+	/**
+	 * @param filePath The filePath to set.
+	 */
+	public void setFilePath(String filePath) {
+		this.filePath = filePath;
+	}
+
+
 
 }
 
 /*
- * new File()
- * store the Document as Java Object
+ * new File() store the Document as Java Object
  * 
  */

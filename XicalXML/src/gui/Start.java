@@ -13,21 +13,27 @@ import gui.xical.XicalEditor;
 
 import java.io.File;
 
-import lang.Language;
+import conf.Config;
+import conf.lang.Language;
+
 
 /**
  * 
  * @author Jens Kapitza, E-Mail: j.kapitza@schwarze-allianz.de, ICQ. 234531384
- *
+ * 
  */
 public class Start {
-
+	// configWreiter musss noch alles anlegen config Editor muss sachen aendern
+	// koennen LANG +++
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Language.initLanguage(new File("german.properties"));
-	//	Language.initLanguage(new File("english.properties"));
+		File confFile = new File("config.properties");
+		Config.iniConfig(confFile);
+		File langFile = new File(Config.getValue("langFile"));
+
+		Language.initLanguage(langFile);
 		XicalEditor editor = new XicalEditor();
 		editor.pack();
 		editor.setVisible(true);
@@ -35,9 +41,8 @@ public class Start {
 
 }
 
-
 /*
  * new File()
- *
- *
+ * 
+ * 
  */

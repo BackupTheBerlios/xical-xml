@@ -7,7 +7,7 @@
  * User: Jens Kapitza
  * 
  */
-package lang;
+package conf.lang;
 
 import java.io.File;
 import java.io.FileInputStream;

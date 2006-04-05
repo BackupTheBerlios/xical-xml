@@ -9,10 +9,9 @@
  */
 package gui.xical;
 
-import gui.xical.menu.FileMenu;
 import gui.xical.menu.EditMenu;
+import gui.xical.menu.FileMenu;
 import gui.xical.menu.HelpMenu;
-import gui.xical.menu.ViewMenu;
 
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -24,21 +23,22 @@ import javax.swing.JMenuBar;
  */
 public class XicalMenuBar extends JMenuBar {
 
-	private JMenu file, edit, help, view;
+	private JMenu file, edit, help;
 
+	// view;
+	// kein view in version 1
 	public XicalMenuBar() {
 		file = new FileMenu();
 		edit = new EditMenu();
 		help = new HelpMenu();
-		view = new ViewMenu();
+		// view = new ViewMenu();
 
 		add(file);
 		add(edit);
-		add(view);
+		// add(view);
 		add(help);
 	}
 
-	
 	/**
 	 * @return Returns the file.
 	 */
@@ -46,14 +46,13 @@ public class XicalMenuBar extends JMenuBar {
 		return (FileMenu) file;
 	}
 
-
 	/**
-	 * @param file The file to set.
+	 * @param file
+	 *            The file to set.
 	 */
 	public void setFile(JMenu file) {
 		this.file = file;
 	}
-
 
 	/**
 	 * @return Returns the edit.
@@ -63,7 +62,8 @@ public class XicalMenuBar extends JMenuBar {
 	}
 
 	/**
-	 * @param edit The edit to set.
+	 * @param edit
+	 *            The edit to set.
 	 */
 	public void setEdit(JMenu edit) {
 		this.edit = edit;
@@ -77,25 +77,13 @@ public class XicalMenuBar extends JMenuBar {
 	}
 
 	/**
-	 * @param help The help to set.
+	 * @param help
+	 *            The help to set.
 	 */
 	public void setHelp(JMenu help) {
 		this.help = help;
 	}
 
-	/**
-	 * @return Returns the view.
-	 */
-	public ViewMenu getView() {
-		return (ViewMenu) view;
-	}
-
-	/**
-	 * @param view The view to set.
-	 */
-	public void setView(JMenu view) {
-		this.view = view;
-	}
 }
 
 /*

@@ -19,7 +19,8 @@ import java.io.File;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
-import lang.Language;
+import conf.lang.Language;
+
 
 /**
  * 

@@ -27,13 +27,19 @@ public class FrameHelper {
 		int maxwidht = screen.width;
 		int maxheight = screen.height;
 
-		if (widht < 200)
-			widht = 200;
+		if (widht < 300)
+			widht = 300;
 
-		if (height < 200)
-			height = 200;
+		if (height < 300)
+			height = 300;
 		w.setSize(widht, height);
+		w.setMinimumSize(w.getSize());
 		w.setLocation((maxheight / 2) + height, (maxwidht / 2) - widht);
+
+	}
+
+	public static void buildGUI() {
+		// TODO Auto-generated method stub
 
 	}
 

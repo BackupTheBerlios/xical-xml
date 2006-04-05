@@ -18,7 +18,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
-import lang.Language;
+import conf.lang.Language;
 
 /**
  * 
@@ -44,7 +44,7 @@ public class FileMenu extends JMenu {
 		makeExit = new JMenuItem(Language.getString("makeExit"));
 
 		addActions();
-		setDeafaults(false);
+		setDefaults(false);
 		add(makeNew);
 		add(makeOpen);
 		addSeparator();
@@ -58,11 +58,11 @@ public class FileMenu extends JMenu {
 
 	}
 
-	public void setDeafaults(boolean stat) {
+	public void setDefaults(boolean stat) {
 		makeSave.setEnabled(stat);
 		makeSaveas.setEnabled(stat);
 		makeExport.setEnabled(stat);
-		makeClose.setEnabled(stat);		
+		makeClose.setEnabled(stat);
 	}
 
 	private void addActions() {
@@ -74,32 +74,48 @@ public class FileMenu extends JMenu {
 			}
 
 		});
-		
+
 		makeClose.addActionListener(new ActionListener() {
-			
+
 			public void actionPerformed(ActionEvent e) {
 				ProjectHelper.closeProject();
 			}
-		
+
 		});
-		
+
 		makeOpen.addActionListener(new ActionListener() {
-			
+
 			public void actionPerformed(ActionEvent e) {
 				ProjectHelper.openProject();
 			}
-		
+
 		});
-		
+
 		makeNew.addActionListener(new ActionListener() {
-			
+
 			public void actionPerformed(ActionEvent e) {
 				ProjectHelper.newProject();
 			}
-		
+
 		});
-		
-		//TODO noch mehr
+
+		makeSave.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent e) {
+				ProjectHelper.saveProject();
+			}
+
+		});
+
+		makeSaveas.addActionListener(new ActionListener() {
+
+			public void actionPerformed(ActionEvent e) {
+				ProjectHelper.saveasProject();
+			}
+
+		});
+
+		// TODO noch mehr
 	}
 
 	/**
@@ -110,7 +126,8 @@ public class FileMenu extends JMenu {
 	}
 
 	/**
-	 * @param makeClose The makeClose to set.
+	 * @param makeClose
+	 *            The makeClose to set.
 	 */
 	public void setMakeClose(JMenuItem makeClose) {
 		this.makeClose = makeClose;
@@ -124,7 +141,8 @@ public class FileMenu extends JMenu {
 	}
 
 	/**
-	 * @param makeExit The makeExit to set.
+	 * @param makeExit
+	 *            The makeExit to set.
 	 */
 	public void setMakeExit(JMenuItem makeExit) {
 		this.makeExit = makeExit;
@@ -138,7 +156,8 @@ public class FileMenu extends JMenu {
 	}
 
 	/**
-	 * @param makeExport The makeExport to set.
+	 * @param makeExport
+	 *            The makeExport to set.
 	 */
 	public void setMakeExport(JMenu makeExport) {
 		this.makeExport = makeExport;
@@ -152,7 +171,8 @@ public class FileMenu extends JMenu {
 	}
 
 	/**
-	 * @param makeNew The makeNew to set.
+	 * @param makeNew
+	 *            The makeNew to set.
 	 */
 	public void setMakeNew(JMenuItem makeNew) {
 		this.makeNew = makeNew;
@@ -166,7 +186,8 @@ public class FileMenu extends JMenu {
 	}
 
 	/**
-	 * @param makeOpen The makeOpen to set.
+	 * @param makeOpen
+	 *            The makeOpen to set.
 	 */
 	public void setMakeOpen(JMenuItem makeOpen) {
 		this.makeOpen = makeOpen;
@@ -180,7 +201,8 @@ public class FileMenu extends JMenu {
 	}
 
 	/**
-	 * @param makeSave The makeSave to set.
+	 * @param makeSave
+	 *            The makeSave to set.
 	 */
 	public void setMakeSave(JMenuItem makeSave) {
 		this.makeSave = makeSave;
@@ -194,7 +216,8 @@ public class FileMenu extends JMenu {
 	}
 
 	/**
-	 * @param makeSaveas The makeSaveas to set.
+	 * @param makeSaveas
+	 *            The makeSaveas to set.
 	 */
 	public void setMakeSaveas(JMenuItem makeSaveas) {
 		this.makeSaveas = makeSaveas;

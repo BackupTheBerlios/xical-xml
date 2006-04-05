@@ -11,26 +11,29 @@ package gui.xical.menu;
 
 import javax.swing.JMenu;
 
-import lang.Language;
+import conf.lang.Language;
+
 
 /**
  * 
  * @author Jens Kapitza, E-Mail: j.kapitza@schwarze-allianz.de, ICQ. 234531384
- *
+ * 
  */
 public class ViewMenu extends JMenu {
-private JMenu languages;
-public ViewMenu() {
-	setText(Language.getString("ViewMenu"));
-	//keine unterstüzung im betrieb
-	//languages = new LanguagesMenu();
-	//add(languages);
-}
-}
+	private JMenu languages;
 
+	public ViewMenu() {
+		setText(Language.getString("ViewMenu"));
+		// keine unterstüzung im betrieb
+		// editor beenden config aendern ++ neu starten ++ vom Nutzer? ++ Oder
+		// Dispose ++
+		// languages = new LanguagesMenu();
+		// add(languages);
+	}
+}
 
 /*
  * new File()
- *
- *
+ * 
+ * 
  */

@@ -9,6 +9,8 @@
  */
 package gui.helper;
 
+import javax.swing.tree.TreePath;
+
 import xml.xical.XicalDocument;
 import gui.xical.XicalEditor;
 
@@ -52,6 +54,12 @@ public class ProjectHelper {
 		getMain().getBar().getFile().setDeafaults(true);
 	}
 
+	
+	public static void resetEditForm(TreePath path){
+		
+	}
+	
+	
 }
 
 /*

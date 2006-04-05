@@ -29,6 +29,7 @@ public class Start {
 		Language.initLanguage(new File("german.properties"));
 	//	Language.initLanguage(new File("english.properties"));
 		XicalEditor editor = new XicalEditor();
+		editor.pack();
 		editor.setVisible(true);
 	}
 

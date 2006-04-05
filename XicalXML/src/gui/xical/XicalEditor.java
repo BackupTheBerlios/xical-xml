@@ -21,7 +21,6 @@ import javax.swing.JMenuBar;
 import javax.swing.JOptionPane;
 
 import lang.Language;
-
 import xml.xical.XicalDocument;
 
 /**
@@ -136,10 +135,10 @@ public class XicalEditor extends JFrame {
 		createGUI();
 		addBasics();
 	}
-
+	
 	private void addBasics() {
 		setJMenuBar(bar);
-
+	//	add(new ChapterTreeList(),BorderLayout.LINE_START);
 	}
 
 	/**

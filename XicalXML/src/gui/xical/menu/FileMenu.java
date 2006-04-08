@@ -27,6 +27,11 @@ import conf.lang.Language;
  */
 public class FileMenu extends JMenu {
 
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private JMenuItem makeNew, makeOpen, makeClose, makeSave, makeSaveas,
 			makeExit;
 

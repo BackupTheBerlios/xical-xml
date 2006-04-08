@@ -21,6 +21,10 @@ import conf.lang.Language;
  * 
  */
 public class HelpMenu extends JMenu {
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JMenuItem welcome, about, help;
 
 	public HelpMenu() {

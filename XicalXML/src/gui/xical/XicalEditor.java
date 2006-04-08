@@ -32,6 +32,10 @@ import xml.xical.XicalDocument;
  */
 public class XicalEditor extends JFrame {
 
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public static XicalEditor mainEditor;
 
 	private JMenuBar bar;

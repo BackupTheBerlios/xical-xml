@@ -17,6 +17,11 @@ import javax.swing.JPanel;
  *
  */
 public class StatusBar extends JPanel {
+
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 // hier soll mal eine Statusbar hin!
 }
 

@@ -20,7 +20,13 @@ import conf.lang.Language;
  * 
  */
 public class ViewMenu extends JMenu {
-	private JMenu languages;
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
+ //private JMenu languages;
 
 	public ViewMenu() {
 		setText(Language.getString("ViewMenu"));

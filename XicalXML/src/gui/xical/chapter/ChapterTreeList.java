@@ -27,6 +27,10 @@ import javax.swing.tree.TreePath;
  *
  */
 public class ChapterTreeList extends JTree {
+/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 private List a,b,c,d,e;
 
 

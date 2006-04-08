@@ -19,6 +19,11 @@ import javax.swing.JDialog;
  * 
  */
 public class Welcome extends JDialog {
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Welcome() {
 		setTitle("Welcome");
 		setDefaultCloseOperation(HIDE_ON_CLOSE);

@@ -23,6 +23,10 @@ import javax.swing.JMenuBar;
  */
 public class XicalMenuBar extends JMenuBar {
 
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JMenu file, edit, help;
 
 	// view;

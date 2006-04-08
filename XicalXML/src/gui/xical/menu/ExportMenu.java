@@ -22,6 +22,10 @@ import conf.lang.Language;
  */
 public class ExportMenu extends JMenu {
 
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JMenuItem exel,html,pdf,rtf,xical;
 	
 	public ExportMenu() {

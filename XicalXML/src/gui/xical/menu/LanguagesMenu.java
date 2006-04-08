@@ -28,6 +28,10 @@ import conf.lang.Language;
  * 
  */
 public class LanguagesMenu extends JMenu {
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JMenuItem german, english;
 
 	public LanguagesMenu() {

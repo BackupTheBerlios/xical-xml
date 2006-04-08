@@ -22,6 +22,10 @@ import conf.lang.Language;
  */
 public class EditMenu extends JMenu {
 
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JMenuItem addScene, addChapter, editConfig;
 
 	public EditMenu() {

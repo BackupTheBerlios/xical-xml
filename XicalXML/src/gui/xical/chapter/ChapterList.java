@@ -24,6 +24,10 @@ import javax.swing.event.ListSelectionListener;
  * 
  */
 public class ChapterList extends JList {
+	/*
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private List chapterList;
 
 	private class ChapterModel implements ListModel {
